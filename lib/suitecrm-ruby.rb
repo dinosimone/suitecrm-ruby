@@ -2,6 +2,8 @@ require "suitecrm/configuration"
 require "suitecrm/api_exception"
 require "suitecrm/connection"
 require "suitecrm/modules"
+require "suitecrm/module"
+require "suitecrm/relationship"
 
 module SuiteCRM
   class << self

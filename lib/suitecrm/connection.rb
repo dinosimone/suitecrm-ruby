@@ -2,6 +2,7 @@ require "openssl"
 require "faraday"
 require "json"
 require "jwt"
+require "pp"
 
 class SuiteCRM::Connection
   class << self
@@ -41,21 +42,22 @@ class SuiteCRM::Connection
       rescue => e
         raise SuiteCRM::ApiException.new(e)
       end
-      response.body
+      JSON.parse(response.body)
     end
 
-    def delete(endpoint, params)
+    def delete(endpoint)
       begin
         response = connection.delete do |req|
           req.url endpoint
           req.headers["Content-Type"] = "application/json"
-          req.body = params.to_json
         end
       rescue => e
         raise SuiteCRM::ApiException.new(e)
       end
-      response.body
+      JSON.parse(response.body)
     end
+
+    private
 
     def connection
       set_token

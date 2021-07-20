@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://18.236.231.13/suite/Api/V8/module/Contacts/669d86ed-e5a3-7605-0d68-60c22f69743a/relationships
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"FP_events","id":"66ef1d43-06a9-5c09-0853-60f0707fad32"}}'
+    headers:
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI3OGQ0NjYyNmNiZTQ3OTg3NjNjY2QxYzk5MTRiYzcxZDkzMDRhNWM4ZTZkMWVmNzZlNDgyMDE2NmRlMmJhODI1YjI5YjhhODM3ODhkNDI2In0.eyJhdWQiOiI0MWZkZmY0Ni0wNDk5LWFkZTgtZjRkNS02MGVlZmNkMmQ1ZDYiLCJqdGkiOiIyNzhkNDY2MjZjYmU0Nzk4NzYzY2NkMWM5OTE0YmM3MWQ5MzA0YTVjOGU2ZDFlZjc2ZTQ4MjAxNjZkZTJiYTgyNWIyOWI4YTgzNzg4ZDQyNiIsImlhdCI6MTYyNjgwNTQ2MiwibmJmIjoxNjI2ODA1NDYyLCJleHAiOjE2MjY4MDkwNjIsInN1YiI6IiIsInNjb3BlcyI6W119.rU7E_ZMDLwYvCdFGPMpoKoYJI9TiBz8Cwdj3e-Rb4aJl-5Ay3bzAGnn5_syWa0XARakPez3cR3lTS3kf3GnGMhdf_tuXG4i-NCQB-vzW8Ci-ITbSE4x99uR1_JY958mg-uYtxi6Vbrxa7X6c-Bs9UDL6XQKJrESNUC05yXtlYPVS0LS7hgwEUIzQ6FBsA3O1ZOEsKzigaoi5VxOs5ZdL8xn9fRtxs8iFnKlGFWDEA_isYS0LUFlNHANY-HnXBxzhKGlCWGTWW0Ja-jaw1LfC-FMEkg4PYUDf__Fbmf21cY429jrAyZVXEAosq6LSSB_WjwuU-RY5AVvi84dFuigBdw
+      User-Agent:
+      - Faraday v1.5.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 20 Jul 2021 18:56:16 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+      Accept:
+      - application/vnd.api+json
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/vnd.api+json
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "meta": {
+                "message": "FP_events with id 66ef1d43-06a9-5c09-0853-60f0707fad32 has been added to Contact with id 669d86ed-e5a3-7605-0d68-60c22f69743a"
+            },
+            "data": []
+        }
+  recorded_at: Tue, 20 Jul 2021 18:56:16 GMT
+recorded_with: VCR 6.0.0
