@@ -1,6 +1,6 @@
 # SuiteCRM::Ruby
 
-Ruby API client for SuiteCRM V8
+Ruby client for [SuiteCRM's](https://suitecrm.com/) V8 API
 
 ## Installation
 
@@ -117,13 +117,13 @@ SuiteCRM::Relationship.delete(
 )
 ```
 
-## Development
+## Testing
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+In developement, run the app using
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    $ rspec
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/suitecrm-ruby.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dinosimone/suitecrm-ruby.
 
