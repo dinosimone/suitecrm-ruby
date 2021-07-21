@@ -33,13 +33,15 @@ SuiteCRM.configure do |config|
 end
 ```
 
-### Get all module records
+### Modules
+
+#### Get all module records
 
 ```ruby
 SuiteCRM::Modules.get("Contacts")
 ```
 
-### Create a new module record
+#### Create a new module record
 
 ```ruby
 SuiteCRM::Module.create(
@@ -52,7 +54,7 @@ SuiteCRM::Module.create(
 )
 ```
 
-### Update a single module record
+#### Update a single module record
 
 ```ruby
 SuiteCRM::Module.update({
@@ -60,13 +62,18 @@ SuiteCRM::Module.update({
     type: "Contacts",
     id: "79a08232-6e62-dbaf-af6d-60f7146d1e87",
     attributes: {
-      first_name: "Jordan"
+      first_name: "Jordan",
       last_name: "Peterson"
     }
   }
 })
 ```
 
+#### Delete a single module record
+
+```ruby
+SuiteCRM::Module.delete("Contacts", "79a08232-6e62-dbaf-af6d-60f7146d1e87")
+```
 
 ## Development
 
