@@ -33,6 +33,24 @@ SuiteCRM.configure do |config|
 end
 ```
 
+### Get all module records
+
+```ruby
+SuiteCRM::Modules.get("Contacts")
+```
+
+### Create a new module record
+
+```ruby
+SuiteCRM::Module.create(
+  data: {
+    type: "FP_events",
+    attributes: {
+      name: "Meeting"
+    }
+  }
+)
+```
 
 
 ## Development
