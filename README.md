@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ### Configuration
 
-Prior to using the API client, you will need to create a new API user as documented here [https://docs.suitecrm.com/developer/api/developer-setup-guide/configure-authentication/].
+Prior to using the API client, you will need to create a new API user as documented [here](https://docs.suitecrm.com/developer/api/developer-setup-guide/configure-authentication).
 
 ```ruby
 SuiteCRM.configure do |config|
