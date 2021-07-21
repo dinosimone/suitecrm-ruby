@@ -142,3 +142,6 @@ In developement, run the app using
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/dinosimone/suitecrm-ruby.
 
+## Author
+
+Dino Simone (dino@simone.is) | dinosimone.com
