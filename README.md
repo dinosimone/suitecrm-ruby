@@ -52,6 +52,21 @@ SuiteCRM::Module.create(
 )
 ```
 
+### Update a single module record
+
+```ruby
+SuiteCRM::Module.update({
+  data: {
+    type: "Contacts",
+    id: "79a08232-6e62-dbaf-af6d-60f7146d1e87",
+    attributes: {
+      first_name: "Jordan"
+      last_name: "Peterson"
+    }
+  }
+})
+```
+
 
 ## Development
 
