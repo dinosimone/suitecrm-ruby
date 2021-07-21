@@ -41,6 +41,12 @@ end
 SuiteCRM::Modules.get("Contacts")
 ```
 
+#### Get a single module record
+
+```ruby
+SuiteCRM::Module.get("Contacts", "51f7baeb-fe82-d3c1-5ef9-60c0de2c67cf")
+```
+
 #### Create a new module record
 
 ```ruby
@@ -73,6 +79,42 @@ SuiteCRM::Module.update({
 
 ```ruby
 SuiteCRM::Module.delete("Contacts", "79a08232-6e62-dbaf-af6d-60f7146d1e87")
+```
+
+### Relationships
+
+#### Get all relationships of type for a module
+
+```ruby
+SuiteCRM::Relationship.get(
+  "Contacts", "669d86ed-e5a3-7605-0d68-60c22f69743a", "fp_events_contacts"
+)
+```
+
+#### Create a new relationship of type for a module
+
+```ruby
+SuiteCRM::Relationship.create(
+  "Contacts",
+  "669d86ed-e5a3-7605-0d68-60c22f69743a",
+  {
+    data: {
+      type: "FP_events",
+      id: "66ef1d43-06a9-5c09-0853-60f0707fad32"
+    }
+  }
+)
+```
+
+#### Delete a single module relationship
+
+```ruby
+SuiteCRM::Relationship.delete(
+  "Contacts",
+  "669d86ed-e5a3-7605-0d68-60c22f69743a",
+  "fp_events_contacts",
+  "66ef1d43-06a9-5c09-0853-60f0707fad32"
+)
 ```
 
 ## Development
