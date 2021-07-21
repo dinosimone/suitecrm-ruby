@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dino Simone"]
   spec.email         = ["dino@simone.is"]
 
-  spec.summary       = %q{Simple client for the SuiteCRM REST API.}
+  spec.summary       = %q{Ruby client for SuiteCRM's V8 API}
   spec.description   = %q{Implements basic functionality needed to create and find records in SuiteCRM.}
   spec.homepage      = "https://github.com/dinosimone/suitecrm-ruby"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
