@@ -127,6 +127,13 @@ SuiteCRM::Meta.get
 
 ## Testing
 
+Export environment variables
+
+    $ export API_URL="http://1.1.1.1/suite/Api/V8"
+    $ export TOKEN_URL="http://1.1.1.1/suite/Api/access_token"
+    $ export CLIENT_ID="41fdff46..."
+    $ export CLIENT_SECRET="VjB_S2PICeQ..."
+
 In developement, run the app using
 
     $ rspec
