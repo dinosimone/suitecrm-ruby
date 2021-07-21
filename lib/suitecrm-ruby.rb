@@ -4,6 +4,7 @@ require "suitecrm/connection"
 require "suitecrm/modules"
 require "suitecrm/module"
 require "suitecrm/relationship"
+require "suitecrm/meta"
 
 module SuiteCRM
   class << self
