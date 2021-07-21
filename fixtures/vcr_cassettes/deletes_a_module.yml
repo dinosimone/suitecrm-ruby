@@ -148,6 +148,54 @@ http_interactions:
         }
   recorded_at: Tue, 20 Jul 2021 19:20:22 GMT
 - request:
+    method: delete
+    uri: http://18.236.231.13/suite/Api/V8/module/Contacts/6f0ede41-a514-1f40-d444-60f722965d92
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1ZTk5NWZmN2IxZTgyNGVhNGJlYjg5NjYxYWE5Mjc3OTkzYjhmOGIxNWVhNWYyODdlNjUyNDkwOTdhZGQ3ZmI5YjVjZWM2YmQ5YzIxY2RmIn0.eyJhdWQiOiI0MWZkZmY0Ni0wNDk5LWFkZTgtZjRkNS02MGVlZmNkMmQ1ZDYiLCJqdGkiOiI4NWU5OTVmZjdiMWU4MjRlYTRiZWI4OTY2MWFhOTI3Nzk5M2I4ZjhiMTVlYTVmMjg3ZTY1MjQ5MDk3YWRkN2ZiOWI1Y2VjNmJkOWMyMWNkZiIsImlhdCI6MTYyNjgwODg2NywibmJmIjoxNjI2ODA4ODY3LCJleHAiOjE2MjY4MTI0NjcsInN1YiI6IiIsInNjb3BlcyI6W119.ND-ras3brY1XpuYLpJH_u5wQ86UD8SrOfRkdilb8xl4Te1GijM6nzbwkJghaRpkgVpOfzz_XWrbT5j1nyfjhaFw9OhgPcBtmkolrWt4t3iQ_0a_zuNOikfG-vz-6osnEFbIVJuFhFTlpXRPugr0kVymMvTTHINSR7JBPwF3eLy24JzCb5SPYhVGzqBr2HOhrkbWGOdJ-YcUOYxpw86GMttlaOAupgbTIP56_VJbWdt9v6SXt8gM6IfBuKIiObmlCiYu3R_F43ogsqrGvSw0MQm7UC-6kHgDq2f4bE6cmjm8By2Fgpf86hrh-Nd7LsvU79XdJ2XoToBlFDYXWg-_XBg
+      User-Agent:
+      - Faraday v1.5.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Jul 2021 19:21:09 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+      Accept:
+      - application/vnd.api+json
+      Content-Length:
+      - '123'
+      Content-Type:
+      - application/vnd.api+json
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "meta": {
+                "message": "Record with id 6f0ede41-a514-1f40-d444-60f722965d92 is deleted"
+            },
+            "data": []
+        }
+  recorded_at: Tue, 20 Jul 2021 19:21:09 GMT
+- request:
     method: post
     uri: http://18.236.231.13/suite/Api/V8/module
     body:
@@ -155,7 +203,7 @@ http_interactions:
       string: '{"data":{"type":"Contacts","attributes":{"last_name":"API Tester"}}}'
     headers:
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1ZTk5NWZmN2IxZTgyNGVhNGJlYjg5NjYxYWE5Mjc3OTkzYjhmOGIxNWVhNWYyODdlNjUyNDkwOTdhZGQ3ZmI5YjVjZWM2YmQ5YzIxY2RmIn0.eyJhdWQiOiI0MWZkZmY0Ni0wNDk5LWFkZTgtZjRkNS02MGVlZmNkMmQ1ZDYiLCJqdGkiOiI4NWU5OTVmZjdiMWU4MjRlYTRiZWI4OTY2MWFhOTI3Nzk5M2I4ZjhiMTVlYTVmMjg3ZTY1MjQ5MDk3YWRkN2ZiOWI1Y2VjNmJkOWMyMWNkZiIsImlhdCI6MTYyNjgwODg2NywibmJmIjoxNjI2ODA4ODY3LCJleHAiOjE2MjY4MTI0NjcsInN1YiI6IiIsInNjb3BlcyI6W119.ND-ras3brY1XpuYLpJH_u5wQ86UD8SrOfRkdilb8xl4Te1GijM6nzbwkJghaRpkgVpOfzz_XWrbT5j1nyfjhaFw9OhgPcBtmkolrWt4t3iQ_0a_zuNOikfG-vz-6osnEFbIVJuFhFTlpXRPugr0kVymMvTTHINSR7JBPwF3eLy24JzCb5SPYhVGzqBr2HOhrkbWGOdJ-YcUOYxpw86GMttlaOAupgbTIP56_VJbWdt9v6SXt8gM6IfBuKIiObmlCiYu3R_F43ogsqrGvSw0MQm7UC-6kHgDq2f4bE6cmjm8By2Fgpf86hrh-Nd7LsvU79XdJ2XoToBlFDYXWg-_XBg
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxMGFmYWY5MzJhZDU5NzU0NzA3MzZjNzBkY2I0YTIxZWRjNGQ1NWE1NzEzMjU2YmRiOTIzMjM5MDk3NWY1ZjcyM2VmYjBkMzgxMDU2NGQzIn0.eyJhdWQiOiI0MWZkZmY0Ni0wNDk5LWFkZTgtZjRkNS02MGVlZmNkMmQ1ZDYiLCJqdGkiOiJlMTBhZmFmOTMyYWQ1OTc1NDcwNzM2YzcwZGNiNGEyMWVkYzRkNTVhNTcxMzI1NmJkYjkyMzIzOTA5NzVmNWY3MjNlZmIwZDM4MTA1NjRkMyIsImlhdCI6MTYyNjg3OTAyNywibmJmIjoxNjI2ODc5MDI3LCJleHAiOjE2MjY4ODI2MjcsInN1YiI6IiIsInNjb3BlcyI6W119.LHBpzguP9CQSbGENlhUJR4TeY8mw9aN-T1usv3m6vjohEunK7KYEpOzgRFrRpQsg3jipnLGEJoZy8YI__hLmxIxEl5YTrQWk5_-ISbDr9tEerk_u58oukF3r0TTETa87A_-J7OTu8tTMOdzxXBNE_V3lTHrWer3yTpTzQKi9SGSPIDZWoEWJY08zJxJQikseVqgGsF0VyVmK7tSE7_v8aTzOTwuJrmrkA9RPznq22kogQKSnFC4c-BtLyVVh_Yq_brgMjzJWrmjckmvt3RRk_bxmkie5e97ZX0_BUd9KjhQ0l4JpEnmDfTJtCEqxRFEeyJj1p5oMVO2ionRVlNgGjw
       User-Agent:
       - Faraday v1.5.1
       Content-Type:
@@ -170,7 +218,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Tue, 20 Jul 2021 19:21:09 GMT
+      - Wed, 21 Jul 2021 14:50:28 GMT
       Server:
       - Apache/2.4.41 (Ubuntu)
       Access-Control-Allow-Origin:
@@ -191,11 +239,11 @@ http_interactions:
         {
             "data": {
                 "type": "Contact",
-                "id": "6f0ede41-a514-1f40-d444-60f722965d92",
+                "id": "9d40947e-6def-c134-1220-60f834d5bf7a",
                 "attributes": {
                     "name": "API Tester",
-                    "date_entered": "2021-07-20T19:21:00+00:00",
-                    "date_modified": "2021-07-20T19:21:00+00:00",
+                    "date_entered": "2021-07-21T14:50:00+00:00",
+                    "date_modified": "2021-07-21T14:50:00+00:00",
                     "modified_user_id": "1",
                     "modified_by_name": "Dino Simone",
                     "created_by": "1",
@@ -308,72 +356,72 @@ http_interactions:
                 "relationships": {
                     "AM_ProjectTemplates": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/am_projecttemplates_contacts_1"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/am_projecttemplates_contacts_1"
                         }
                     },
                     "AOS_Contracts": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/aos_contracts"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/aos_contracts"
                         }
                     },
                     "AOS_Invoices": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/aos_invoices"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/aos_invoices"
                         }
                     },
                     "AOS_Quotes": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/aos_quotes"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/aos_quotes"
                         }
                     },
                     "CampaignLog": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/campaigns"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/campaigns"
                         }
                     },
                     "EmailAddress": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/email_addresses"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/email_addresses"
                         }
                     },
                     "Opportunities": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/opportunities"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/opportunities"
                         }
                     },
                     "Project": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/project_contacts_1"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/project_contacts_1"
                         }
                     },
                     "ProspectLists": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/prospect_lists"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/prospect_lists"
                         }
                     },
                     "SecurityGroups": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/SecurityGroups"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/SecurityGroups"
                         }
                     },
                     "Users": {
                         "links": {
-                            "related": "V8/module/6f0ede41-a514-1f40-d444-60f722965d92/relationships/created_by_link"
+                            "related": "V8/module/9d40947e-6def-c134-1220-60f834d5bf7a/relationships/created_by_link"
                         }
                     }
                 }
             }
         }
-  recorded_at: Tue, 20 Jul 2021 19:21:09 GMT
+  recorded_at: Wed, 21 Jul 2021 14:50:28 GMT
 - request:
     method: delete
-    uri: http://18.236.231.13/suite/Api/V8/module/Contacts/6f0ede41-a514-1f40-d444-60f722965d92
+    uri: http://18.236.231.13/suite/Api/V8/module/Contacts/9d40947e-6def-c134-1220-60f834d5bf7a
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1ZTk5NWZmN2IxZTgyNGVhNGJlYjg5NjYxYWE5Mjc3OTkzYjhmOGIxNWVhNWYyODdlNjUyNDkwOTdhZGQ3ZmI5YjVjZWM2YmQ5YzIxY2RmIn0.eyJhdWQiOiI0MWZkZmY0Ni0wNDk5LWFkZTgtZjRkNS02MGVlZmNkMmQ1ZDYiLCJqdGkiOiI4NWU5OTVmZjdiMWU4MjRlYTRiZWI4OTY2MWFhOTI3Nzk5M2I4ZjhiMTVlYTVmMjg3ZTY1MjQ5MDk3YWRkN2ZiOWI1Y2VjNmJkOWMyMWNkZiIsImlhdCI6MTYyNjgwODg2NywibmJmIjoxNjI2ODA4ODY3LCJleHAiOjE2MjY4MTI0NjcsInN1YiI6IiIsInNjb3BlcyI6W119.ND-ras3brY1XpuYLpJH_u5wQ86UD8SrOfRkdilb8xl4Te1GijM6nzbwkJghaRpkgVpOfzz_XWrbT5j1nyfjhaFw9OhgPcBtmkolrWt4t3iQ_0a_zuNOikfG-vz-6osnEFbIVJuFhFTlpXRPugr0kVymMvTTHINSR7JBPwF3eLy24JzCb5SPYhVGzqBr2HOhrkbWGOdJ-YcUOYxpw86GMttlaOAupgbTIP56_VJbWdt9v6SXt8gM6IfBuKIiObmlCiYu3R_F43ogsqrGvSw0MQm7UC-6kHgDq2f4bE6cmjm8By2Fgpf86hrh-Nd7LsvU79XdJ2XoToBlFDYXWg-_XBg
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxMGFmYWY5MzJhZDU5NzU0NzA3MzZjNzBkY2I0YTIxZWRjNGQ1NWE1NzEzMjU2YmRiOTIzMjM5MDk3NWY1ZjcyM2VmYjBkMzgxMDU2NGQzIn0.eyJhdWQiOiI0MWZkZmY0Ni0wNDk5LWFkZTgtZjRkNS02MGVlZmNkMmQ1ZDYiLCJqdGkiOiJlMTBhZmFmOTMyYWQ1OTc1NDcwNzM2YzcwZGNiNGEyMWVkYzRkNTVhNTcxMzI1NmJkYjkyMzIzOTA5NzVmNWY3MjNlZmIwZDM4MTA1NjRkMyIsImlhdCI6MTYyNjg3OTAyNywibmJmIjoxNjI2ODc5MDI3LCJleHAiOjE2MjY4ODI2MjcsInN1YiI6IiIsInNjb3BlcyI6W119.LHBpzguP9CQSbGENlhUJR4TeY8mw9aN-T1usv3m6vjohEunK7KYEpOzgRFrRpQsg3jipnLGEJoZy8YI__hLmxIxEl5YTrQWk5_-ISbDr9tEerk_u58oukF3r0TTETa87A_-J7OTu8tTMOdzxXBNE_V3lTHrWer3yTpTzQKi9SGSPIDZWoEWJY08zJxJQikseVqgGsF0VyVmK7tSE7_v8aTzOTwuJrmrkA9RPznq22kogQKSnFC4c-BtLyVVh_Yq_brgMjzJWrmjckmvt3RRk_bxmkie5e97ZX0_BUd9KjhQ0l4JpEnmDfTJtCEqxRFEeyJj1p5oMVO2ionRVlNgGjw
       User-Agent:
       - Faraday v1.5.1
       Content-Type:
@@ -388,7 +436,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 20 Jul 2021 19:21:09 GMT
+      - Wed, 21 Jul 2021 14:50:28 GMT
       Server:
       - Apache/2.4.41 (Ubuntu)
       Access-Control-Allow-Origin:
@@ -408,9 +456,9 @@ http_interactions:
       string: |-
         {
             "meta": {
-                "message": "Record with id 6f0ede41-a514-1f40-d444-60f722965d92 is deleted"
+                "message": "Record with id 9d40947e-6def-c134-1220-60f834d5bf7a is deleted"
             },
             "data": []
         }
-  recorded_at: Tue, 20 Jul 2021 19:21:09 GMT
+  recorded_at: Wed, 21 Jul 2021 14:50:28 GMT
 recorded_with: VCR 6.0.0
