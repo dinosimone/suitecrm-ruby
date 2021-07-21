@@ -117,6 +117,14 @@ SuiteCRM::Relationship.delete(
 )
 ```
 
+### Meta
+
+#### Obtain a list of available modules
+
+```ruby
+SuiteCRM::Meta.get
+```
+
 ## Testing
 
 In developement, run the app using
