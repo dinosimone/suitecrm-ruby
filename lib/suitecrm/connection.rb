@@ -2,7 +2,6 @@ require "openssl"
 require "faraday"
 require "json"
 require "jwt"
-require "pp"
 
 class SuiteCRM::Connection
   class << self
@@ -66,17 +65,6 @@ class SuiteCRM::Connection
         faraday.options.timeout = 5
         faraday.options.open_timeout = 5
         faraday.headers["Authorization"] = @api_token
-        faraday.use CustomErrors
-        faraday.adapter Faraday.default_adapter
-      end
-    end
-
-    def connection_multipart
-      set_token
-      Faraday.new(url: @api_url) do |faraday|
-        faraday.request :multipart
-        faraday.headers["Authorization"] = @api_token
-        faraday.use CustomErrors
         faraday.adapter Faraday.default_adapter
       end
     end
@@ -116,17 +104,6 @@ class SuiteCRM::Connection
         "Content-Type" => "application/json"
       )
       @api_token = "Bearer " + JSON.parse(response.body)["access_token"]
-    end
-  end
-end
-
-class CustomErrors < Faraday::Response::RaiseError
-  def on_complete(env)
-    case env[:status]
-    when 400...600
-      JSON.parse(env[:body])
-    else
-      super
     end
   end
 end

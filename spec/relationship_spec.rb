@@ -25,7 +25,7 @@ describe SuiteCRM::Relationship do
               name: "Another Fake Event"
             }
           }
-        }        
+        }
       end
     end
 
