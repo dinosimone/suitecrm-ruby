@@ -1,8 +1,6 @@
-# Suitecrm::Ruby
+# SuiteCRM::Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/suitecrm/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby API client for SuiteCRM V8
 
 ## Installation
 
@@ -22,7 +20,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuration
+
+Prior to using the API client, you will need to create a new API user as documented here [https://docs.suitecrm.com/developer/api/developer-setup-guide/configure-authentication/].
+
+```ruby
+SuiteCRM.configure do |config|
+  config.api_url = "http://[ip]/suite/Api/V8"
+  config.token_url = "http://[ip]/suite/Api/access_token"
+  config.client_id = "[client id]"
+  config.client_secret = "[client secret]"
+end
+```
+
+
 
 ## Development
 
